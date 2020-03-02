@@ -6,7 +6,7 @@ class CreateReservations < ActiveRecord::Migration[5.2]
       t.string :status
       t.string :total_price
       t.references :user, foreign_key: true
-      t.references :raclettemachine, foreign_key: true
+      t.references :raclette_machine, foreign_key: true
 
       t.timestamps
     end
