@@ -5,6 +5,7 @@ class RacletteMachinesController < ApplicationController
 
   def show
     @raclette_machine = RacletteMachine.find(params[:id])
+    @reservation = Reservation.new
   end
 
   def new
@@ -13,10 +14,16 @@ class RacletteMachinesController < ApplicationController
 
   def create
     @raclette_machine = RacletteMachine.new(raclette_machine_params)
-    if @raclette_machine.save
-      redirect_to raclette_machine_path(@raclette_machine)
-    else
-      render :new
-    end
+    @raclette_machine.save!
+    redirect_to raclette_machines_path
+
+
+
+    # raise
+  end
+   private
+
+  def raclette_machine_params
+    params.require(:raclette_machine).permit(:name, :capacity, :address, :accessories, :price, :user_id)
   end
 end

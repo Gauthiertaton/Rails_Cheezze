@@ -1,0 +1,23 @@
+<h2 class="text-center">Add a raclette <strong id="red-word">machine</strong> ! </h2>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-6">
+
+      <br>
+      <%= simple_form_for @raclette_machine do |f| %>
+      <%= f.input :name, placeholder: "Tefal X342", :label_html => { :class => "label-css"} %>
+      <%= f.input :address, label: "Your address", placeholder: "36 avenue du calin Nantes" %>
+      <%= f.input :capacity, label: "Capacity", placeholder: "8" %>
+      <%= f.input :accessories, label: "Accessories", placeholder: "3 poelons" %>
+      <%= f.input :price, label: "Price €", placeholder: "100€" %>
+      <hr>
+      <br>
+      <hr>
+      <%= f.button :submit, "Add a raclette machine", class: "btn btn-danger btn-lg"%>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
