@@ -9,9 +9,25 @@
 
     </div>
   <h2 class="card-trip-pricing"><i class="fas fa-tags"aria-hidden="true"></i> <%= @raclette_machine.price  %></h2>
+</div>
+</div>
 
+
+
+<div class="form-group row">
+  <label for="example-datetime-local-input" class="col-2 col-form-label">Reservation start</label>
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+  </div>
 </div>
+<div class="form-group row">
+  <label for="example-date-input" class="col-2 col-form-label">Reservation end</label>
+  <div class="col-10">
+    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+      <%= link_to 'Reservation', reservations_path, class: 'btn btn-link' %>
+  </div>
 </div>
+
 
 
 
