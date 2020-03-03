@@ -15,6 +15,7 @@ RacletteMachine.destroy_all
 puts "Cleaning.raclette .."
 
 puts 'Creating users...'
+
 User.create!(first_name: "Gauthier", last_name: "Taton", email: 'gauthier_taton@yahoo.fr', password: 'cheezze')
 User.create!(first_name: "Marion", last_name: "Henrio", email: 'marion.henrio@hotmail.fr', password: 'cheezze')
 User.create!(first_name: "Armel", last_name: "Ahehehinnou", email: 'ahehehinnouarmel8@gmail.com', password: 'cheezze')
@@ -25,6 +26,7 @@ User.create!(first_name: "Jim", last_name: "Morison", email: Faker::Internet.ema
 User.create!(first_name: "Georges", last_name: "Piton", email: Faker::Internet.email, password: 'cheezze' )
 User.create!(first_name: "Romain", last_name: "Cul", email: Faker::Internet.email, password: 'cheezze' )
 User.create!(first_name: "Jack", last_name: "Daniels", email: Faker::Internet.email, password: 'cheezze' )
+
 puts 'Creating raclette machine...'
 user_id = User.ids
 RacletteMachine.create!(name: "Tefal RE127812 Déco Inox", price: '10€', capacity: '4', address: Faker::Address.full_address, accessories: '4 poêlons', user_id: user_id.sample)
