@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  resources :profiles, only: [:show]
+  resource :profile, only: [:show]
   resources :raclette_machines, only: [:index, :show, :new, :create] do
     resources :reservations, only: [:new, :create]
   end
