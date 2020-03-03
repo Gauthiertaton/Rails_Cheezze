@@ -5,6 +5,7 @@ class RacletteMachinesController < ApplicationController
 
   def show
     @raclette_machine = RacletteMachine.find(params[:id])
+    @reservation = Reservation.new
   end
 
   def new
