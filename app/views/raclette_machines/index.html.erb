@@ -1,18 +1,16 @@
-<div class="d-flex justify-content-between align-items-end">
-  <h1>Raclette Machines</h1>
-  <p><%= link_to 'Nouvelle raclette machine', new_raclette_machine_path, class: 'btn btn-primary' %></p>
-</div>
 
-<div class="card-product">
+
+<div class="row">
+
   <% @raclette_machines.each do |raclette_machine| %>
-  <img src="https://medias3-1.ubaldi.com/visuels/67787/PR457812-01-43.jpg" />
-      <div class="card-product-infos">
-        <h2> <%= link_to raclette_machine.name, raclette_machine_path(raclette_machine), class: 'font-weight-bolder text-dark' %> </h2>
-        <p> Capacité <%= link_to raclette_machine.capacity, raclette_machine_path(raclette_machine), class: 'font-weight-bolder text-dark' %> <strong> Prix <%= link_to raclette_machine.price, raclette_machine_path(raclette_machine), class: 'font-weight-bolder text-dark' %> </strong> </p>
+  <div class="card-product">
+    <img src="https://medias3-1.ubaldi.com/visuels/67787/PR457812-01-43.jpg" />
+        <div class="card-product-infos">
+          <h2> <%= link_to raclette_machine.name, raclette_machine_path(raclette_machine), class: 'font-weight-bolder text-dark' %> </h2>
+          <p> Capacité <%= raclette_machine.capacity %> <br> <strong> Prix <%= raclette_machine.price %> </strong> </p>
+        </div>
       </div>
-  <% end %>
+   <% end %>
+
 </div>
-
-
-
 
