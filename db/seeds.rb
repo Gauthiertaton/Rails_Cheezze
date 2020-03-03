@@ -24,7 +24,7 @@ puts 'Creating users...'
 # User.create!(first_name: "Jim", last_name: "Morison", email: Faker::Internet.email, password: 'cheezze' )
 # User.create!(first_name: "Georges", last_name: "Piton", email: Faker::Internet.email, password: 'cheezze' )
 # User.create!(first_name: "Romain", last_name: "Cul", email: Faker::Internet.email, password: 'cheezze' )
-# User.create!(first_name: "Jack", last_name: "Daniels", email: Faker::Internet.email, password: 'cheezze' )
+User.create!(first_name: "Jack", last_name: "Daniels", email: Faker::Internet.email, password: 'cheezze' )
 
 puts 'Creating raclette machine...'
 RacletteMachine.create!(name: "Tefal RE127812 Déco Inox", price: '10€', capacity: '4', address: Faker::Address.full_address, accessories: '4 poêlons', user_id: 31 )
