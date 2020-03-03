@@ -40,4 +40,6 @@ RacletteMachine.create!(name: "Russell Hobbs Quator 4 en 1", price: '4€', capa
 RacletteMachine.create!(name: "Tefal RE138012 Déco Colormania", price: '6€', capacity: '8', address: Faker::Address.full_address, accessories: '8 poêlons', user_id: user_id.sample )
 RacletteMachine.create!(name: "Klarstein Schmelzlette", price: '9€', capacity: '6', address: Faker::Address.full_address, accessories: '6 poêlons', user_id: user_id.sample )
 
+
+
 puts 'Finished!'
