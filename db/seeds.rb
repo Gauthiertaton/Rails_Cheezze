@@ -59,7 +59,7 @@ raclette_9 = RacletteMachine.create!(name: "Tefal RE138012 Déco Colormania", pr
 file_9 = File.open(Rails.root.join('db/fixtures/raclettes/appareil_9.jpg'))
 raclette_9.photo.attach(io: file_9, filename: 'appareil_9.jpg', content_type: 'image/jpg')
 
-raclette_10 = RacletteMachine.create!(name: "Klarstein Schmelzlette", price: '9€', capacity: '6', address: Faker::Address.full_address, accessories: '6 poêlons', user_id: user_id.samplep)
+raclette_10 = RacletteMachine.create!(name: "Klarstein Schmelzlette", price: '9€', capacity: '6', address: Faker::Address.full_address, accessories: '6 poêlons', user_id: user_id.sample)
 file_10 = File.open(Rails.root.join('db/fixtures/raclettes/appareil_10.jpg'))
 raclette_10.photo.attach(io: file_10, filename: 'appareil_10.jpg', content_type: 'image/jpg')
 
