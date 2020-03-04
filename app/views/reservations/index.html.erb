@@ -1,1 +1,23 @@
 
+<h2 class = "text-center">Mes réservations</h2>
+<div class="row">
+
+  <% @reservations.each do |reservation| %>
+  <div class="card-product">
+
+        <div class="card-product-infos">
+          <p> 🧀 <strong><%= reservation.raclette_machine.name %></strong> </p>
+          <p> <strong> Date début :  </strong> <%= reservation.reservation_start_date %> </p>
+          <p> <strong> Date de fin :  </strong> <%= reservation.reservation_end_date %> </p>
+          <p> <strong> Prix total :  </strong> <%= reservation.total_price %>€ </p>
+          <br>
+          <p> <strong> Statut :  </strong> <%= reservation.status %> </p>
+
+
+        </div>
+
+      </div>
+   <% end %>
+
+</div>
+
