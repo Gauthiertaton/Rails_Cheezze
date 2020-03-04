@@ -1,7 +1,9 @@
 class ReservationsController < ApplicationController
+
   def index
-    # @reservations = Reservation.raclette_machines.all
+    @reservations = current_user.reservations
   end
+
   def new
     @reservation = Reservation.new
   end
