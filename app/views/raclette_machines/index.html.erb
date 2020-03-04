@@ -1,15 +1,13 @@
-<h1 class="text-center"> Appareils à Raclette </h1>
+<h1><strong> Appareils à Raclette </strong></h1>
 
 <div class="row">
   <% @raclette_machines.each do |raclette_machine| %>
     <div class="card-trip-index">
-        <img src="https://medias3-1.ubaldi.com/visuels/67787/PR457812-01-43.jpg" />
+        <%= cl_image_tag raclette_machine.photo.key, height: 300, width: 400, crop: :fill %>
           <div class="card-trip-infos-index">
-              <div>
+              <div class="mr-10">
                 <h2 class = "text-uppercase text-dark"><%= link_to raclette_machine.name, raclette_machine_path(raclette_machine) %></h2>
-                    <p>Address : <%= raclette_machine.address  %></p>
-                    <p>Capacité : <%= raclette_machine.capacity  %></p>
-                    <p>Accessories : <%= raclette_machine.accessories  %></p>
+                <p><strong>Capacité :</strong> <%= raclette_machine.capacity  %></p>
               </div>
               <h2 class="card-trip-pricing"> <%= raclette_machine.price %></h2>
           </div>
