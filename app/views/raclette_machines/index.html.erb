@@ -15,6 +15,15 @@
           </div>
     </div>
   <% end %>
+  <div class="card-product">
+    <img src="https://medias3-1.ubaldi.com/visuels/67787/PR457812-01-43.jpg" />
+        <div class="card-product-infos">
+          <h2> <%= link_to raclette_machine.name, raclette_machine_path(raclette_machine), class: 'font-weight-bolder text-dark' %> </h2>
+          <p> Capacité <%= raclette_machine.capacity %> <br> <strong> Prix <%= raclette_machine.price %> </strong> </p>
+        </div>
+
+      </div>
+   <% end %>
 </div>
 
 

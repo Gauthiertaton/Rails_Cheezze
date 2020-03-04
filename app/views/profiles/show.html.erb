@@ -2,6 +2,19 @@
   <div class="row justify-content-right">
     <div class="col-6">
 
+        <h1><strong>Mon profil</strong></h1>
+        <div class="profil-card d-flex">
+          <div class="card-trip">
+            <p><strong>Prénom: </strong> <%= @user.first_name %></p>
+            <p><strong>Nom: </strong><%= @user.last_name %></p>
+            <p><strong>Email: </strong><%= @user.email %></p>
+          </div>
+          <div class="avatarprofil d-flex align-center">
+            <%= image_tag "https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png", class: "avatar-profil mt-1", id: "profilCard", height: '100', width: '100' %>
+          </div>
+      </div>
+
+
       <h1><strong>Mon profil</strong></h1>
       <br>
       <br>
@@ -10,7 +23,8 @@
       <p><strong>Email: </strong><%= @user.email %></p>
       <br>
       <br>
-      <p><strong>Mes réservations: </strong></p>
+
     </div>
   </div>
+      <%= link_to "Mes réservations", reservations_path, class: "btn btn-light m-4" %>
 </div>
