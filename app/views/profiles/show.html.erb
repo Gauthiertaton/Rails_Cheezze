@@ -2,16 +2,20 @@
   <div class="row justify-content-right">
     <div class="col-6">
 
-        <h1><strong>Mon profil</strong></h1>
+        <h1 class="z-index"><strong>Mon profil</strong></h1>
         <div class="profil-card d-flex">
-          <div class="card-trip">
+          <div class="card-trip d-flex">
+            <div class="container_avatar d-flex">
+              <div class="avatarprofil">
+              <%= image_tag "https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png", class: "avatar-profil mt-1", id: "profilCard", height: '100', width: '100' %>
+              </div>
+            </div>
+          <div class ="col-7 m-4">
             <p><strong>Prénom: </strong> <%= @user.first_name %></p>
             <p><strong>Nom: </strong><%= @user.last_name %></p>
             <p><strong>Email: </strong><%= @user.email %></p>
           </div>
-          <div class="avatarprofil d-flex align-center">
-            <%= image_tag "https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png", class: "avatar-profil mt-1", id: "profilCard", height: '100', width: '100' %>
-          </div>
+        </div>
       </div>
     </div>
   </div>
