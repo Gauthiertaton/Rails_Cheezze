@@ -24,6 +24,6 @@ class RacletteMachinesController < ApplicationController
    private
 
   def raclette_machine_params
-    params.require(:raclette_machine).permit(:name, :capacity, :address, :accessories, :price, :user_id)
+    params.require(:raclette_machine).permit(:name, :capacity, :address, :accessories, :price, :user_id, :photo)
   end
 end
