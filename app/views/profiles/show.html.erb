@@ -1,23 +1,25 @@
-<div class="container mt-5">
-  <div class="row justify-content-right">
+<div class="container">
+  <div class="row justify-content-center t-20">
     <div class="col-6">
 
-        <h1 class="z-index"><strong>Mon profil</strong></h1>
-        <div class="profil-card d-flex">
-          <div class="card-trip d-flex">
+        <h1 class="z-index m-5"><strong>Mon profil</strong></h1>
+        <!-- <div class="profil-card d-flex"> -->
+          <div class="profile-card d-flex">
             <div class="container_avatar d-flex">
-              <div class="avatarprofil">
+              <div class="avatarprofil pr-2">
               <%= image_tag "https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png", class: "avatar-profil mt-1", id: "profilCard", height: '100', width: '100' %>
               </div>
             </div>
-          <div class ="col-7 m-4">
+          <div class ="col-12 m-7">
             <p><strong>Prénom: </strong> <%= @user.first_name %></p>
             <p><strong>Nom: </strong><%= @user.last_name %></p>
             <p><strong>Email: </strong><%= @user.email %></p>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
+      <%= link_to "Retourner à la liste des appareils", raclette_machines_path, class: "btn btn-outline-warning m-4" %>
     </div>
+
   </div>
-      <%= link_to "Mes réservations", reservations_path, class: "btn btn-light m-4" %>
+
 </div>
