@@ -1,11 +1,13 @@
 <div class="card-trip">
-  <img src="https://images.unsplash.com/photo-1522100077728-4fae00f560c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1581&q=80" />
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
+  <!-- <img src="https://images.unsplash.com/photo-1522100077728-4fae00f560c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1581&q=80" /> -->
   <div class="card-trip-infos">
     <div>
         <h2 class = "text-uppercase"><%= @raclette_machine.name %></h2>
         <p>Address : <%= @raclette_machine.address  %></p>
         <p>Capacité : <%= @raclette_machine.capacity  %></p>
         <p>Accessories : <%= @raclette_machine.accessories  %></p>
+
 
    </div>
   <h2 class="card-trip-pricing"><%= @raclette_machine.price  %></h2>
