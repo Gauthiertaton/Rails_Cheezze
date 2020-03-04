@@ -10,19 +10,7 @@
       <p><strong>Email: </strong><%= @user.email %></p>
       <br>
       <br>
-      <div class=button></div>
-
-      #créer methode owner?
-
-      if user.owner?
-      <%= link_to bouton mes reservation  %>
-      <%= link_to bouton mes annonces  %>
-      else
-      <%= link_to bouton mes reservations  %>
-
-
-
-      <p><strong>Mes réservations: </strong></p>
     </div>
   </div>
+      <%= link_to "Mes réservations", reservations_path, class: "btn btn-light m-4" %>
 </div>
