@@ -1,9 +1,9 @@
 
 <h1 class = "text-center"><strong>Mes réservations</strong></h1>
-<div class="row">
+<div class="row d-flex justify-content-center">
 
   <% @reservations.each do |reservation| %>
-  <div class="card-product p-4 m-4">
+  <div class="card-resa">
 
         <div class="card-product-infos">
           <p> 🧀 <strong><%= reservation.raclette_machine.name %></strong> </p>

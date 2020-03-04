@@ -15,7 +15,7 @@ class ReservationsController < ApplicationController
     @reservation.total_price = (@reservation.reservation_end_date - @reservation.reservation_start_date).to_i * (@reservation.raclette_machine.price).to_i
     @reservation.status = 'Pending'
     @reservation.save!
-    redirect_to raclette_machines_path
+    redirect_to reservations_path
   end
 
   def show
