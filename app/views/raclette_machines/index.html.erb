@@ -1,17 +1,21 @@
-<h1><strong> Appareils à Raclette </strong></h1>
+<h1><strong>  Appareils à Raclette </strong></h1>
 
 <div class="row">
   <% @raclette_machines.each do |raclette_machine| %>
+  <%= link_to raclette_machine_path(raclette_machine) do %>
     <div class="card-trip-index">
-        <%= cl_image_tag raclette_machine.photo.key, height: 300, width: 400, crop: :fill %>
+         <%= cl_image_tag raclette_machine.photo.key, height: 300, width: 400, crop: :fill %>
           <div class="card-trip-infos-index">
               <div class="mr-10">
-                <h2 class = "text-uppercase text-dark"><%= link_to raclette_machine.name, raclette_machine_path(raclette_machine) %></h2>
-                <p><strong>Capacité :</strong> <%= raclette_machine.capacity  %></p>
+                <br>
+                <h2><%= raclette_machine.name%></h2>
+                <br>
+                <p><strong> 🍴Capacité :</strong> <%= raclette_machine.capacity  %></p>
               </div>
-              <h2 class="card-trip-pricing"> <%= raclette_machine.price %></h2>
+              <h2 class="card-trip-pricing text-white">💰<%= raclette_machine.price %></h2>
           </div>
     </div>
+    <% end %>
   <% end %>
 </div>
 
