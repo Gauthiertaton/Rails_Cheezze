@@ -1,14 +1,16 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1582883044880-974679bc1f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);">
   <div class="container">
-    <h1> Bienvenue sur Cheezze !</h1>
+    <div class="title">
+      <h1> Bienvenue sur Cheezze !</h1>
+      </div>
     <br>
     <br>
     <br>
     <p>La 1ère app qui te permet de réserver un appareil à raclette en 5 minutes !</p>
-    <p>Prêt à prendre 10 kgs ? Alors connecte-toi vite pour voir la liste des appareils dispo autour de toi !</p>
-    <br>
-    <p><%= link_to 'Je veux voir les appareils', raclette_machines_path, class: 'btn btn-primary' %></p>
 
+  <div class="button">
+    <p><%= link_to 'Je veux voir les appareils', raclette_machines_path, class: 'btn btn-primary' %></p>
+  </div>
 <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Je ne veux pas voir les appareils</a>
 </p>

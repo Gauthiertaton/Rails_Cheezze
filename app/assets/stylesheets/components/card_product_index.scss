@@ -1,50 +1,64 @@
 
 .card-trip-index {
   overflow: hidden;
-  background: #FFC874;
+  background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 20px;
-  margin: 50px;
-  width: 300px;
-  border-radius: 5px;
-
+  margin: 15px;
+  width: 400px;
+  height: 320px;
 }
 
-
-.card-trip-index > img {
-  height: 100px;
-  width: 50%;
-  border-radius: 5px;
+.image {
+  margin-top: 15px;
   object-fit: cover;
 }
 
-.card-trip-index h2 {
-  font-size: 12px;
+.card-infos {
+  padding-right: 10px;
+  padding-top: .5px;
+  padding-left: 10px;
+
+}
+
+.card-name h2 {
+  font-size: 16px;
   font-weight: bold;
-  margin: 0;
-  color: black;
 }
 
+.card-name {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 10px;
+}
 
-.card-trip-index p {
+.card-capacity p {
+  font-size: 15px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-price {
+padding-right: 5px;
+}
+
+.card-price p {
   font-size: 14px;
-  margin: 0;
-  color: white;
+  width: 70px;
+  border: solid 1px;
+  border-radius: 5px;
 }
 
-
-.card-trip-index .card-trip-infos-index {
-  padding: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.card-avatar .card-trip-user {
   position: relative;
+  // right: 16px;
+  top: -20px;
+  width: 40px;
 }
 
-h1 {
-
-  padding-top: 15px;
-}
+// .card-name-avatar {
+//  vertical-align: middle;
+// }
 
 
 
