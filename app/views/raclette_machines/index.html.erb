@@ -1,23 +1,37 @@
-<h1><strong>  Appareils à Raclette </strong></h1>
-
-<div class="row">
-  <% @raclette_machines.each do |raclette_machine| %>
-  <%= link_to raclette_machine_path(raclette_machine) do %>
-    <div class="card-trip-index">
-         <%= cl_image_tag raclette_machine.photo.key, height: 300, width: 400, crop: :fill %>
-          <div class="card-trip-infos-index">
-              <div class="mr-10">
-                <br>
+<div class="title-index pt-3 pb-5">
+  <h1 class = "text-center"><strong>  Appareils à Raclette </strong></h1>
+</div>
+<!-- <div class="container d-flex justify-content-around"> -->
+<!-- <div class="col-sm-4"> -->
+  <!-- <div class="row"> -->
+    <% @raclette_machines.each do |raclette_machine| %>
+    <%= link_to raclette_machine_path(raclette_machine) do %>
+      <div class="card-trip-index ml-5">
+        <div class="image d-flex justify-content-center">
+          <%= cl_image_tag raclette_machine.photo.key, height: 200, width: 380, crop: :fill %>
+        </div>
+          <div class="card-infos">
+            <div class="container-name-avatar d-flex justify-content-between">
+              <div class="card-name">
                 <h2><%= raclette_machine.name%></h2>
-                <br>
+              </div>
+              <div class="card-avatar">
+                <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+              </div>
+            </div>
+            <div class="container-capacity-price d-flex justify-content-between pt-2">
+              <div class="card-capacity">
                 <p><strong> 🍴Capacité :</strong> <%= raclette_machine.capacity  %></p>
               </div>
-              <h2 class="card-trip-pricing text-white">💰<%= raclette_machine.price %></h2>
+              <div class="card-price">
+                <p><%= raclette_machine.price %> / jour</p>
+              </div>
+            </div>
+            </div>
           </div>
-    </div>
     <% end %>
-  <% end %>
-</div>
+    <% end %>
+<!-- </div> -->
 
 
 

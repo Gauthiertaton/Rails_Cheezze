@@ -1,201 +1,201 @@
-.card-product {
-  overflow: hidden;
-  height: 220px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
+// .card-product {
+//   overflow: hidden;
+//   height: 220px;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   display: flex;
+//   align-items: center;
+// }
 
-.card-product-index {
-  overflow: hidden;
-  height: 220px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
+// .card-product-index {
+//   overflow: hidden;
+//   height: 220px;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   display: flex;
+//   align-items: center;
+// }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
+// .card-product img {
+//   height: 100%;
+//   width: 120px;
+//   object-fit: cover;
+// }
 
-.card-product-index img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
+// .card-product-index img {
+//   height: 100%;
+//   width: 120px;
+//   object-fit: cover;
+// }
 
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
+// .card-product h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
 
-.card-product-index h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
+// .card-product-index h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-  display: flex;
-}
+// .card-product p {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   opacity: .7;
+//   margin-bottom: 0;
+//   margin-top: 8px;
+//   display: flex;
+// }
 
-.card-product-index p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-  display: flex;
-}
+// .card-product-index p {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   opacity: .7;
+//   margin-bottom: 0;
+//   margin-top: 8px;
+//   display: flex;
+// }
 
-.card-product .card-product-infos {
-  padding: 16px;
-}
+// .card-product .card-product-infos {
+//   padding: 16px;
+// }
 
-.card-product-index .card-product-infos {
-  padding: 16px;
-}
+// .card-product-index .card-product-infos {
+//   padding: 16px;
+// }
 
-.card-description {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding-bottom: 10px;
-}
+// .card-description {
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   padding-bottom: 10px;
+// }
 
-.card-description-index {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding-bottom: 10px;
-}
+// .card-description-index {
+//   position: absolute;
+//   top: 10px;
+//   left: 10px;
+//   padding-bottom: 10px;
+// }
 
 
-.showmaincard {
-  height: 300px;
-  margin-top: 20px;
-  padding: 40px;
-}
+// .showmaincard {
+//   height: 300px;
+//   margin-top: 20px;
+//   padding: 40px;
+// }
 
-.showmaincard-index {
-  height: 300px;
-  margin-top: 20px;
-  padding: 40px;
-}
+// .showmaincard-index {
+//   height: 300px;
+//   margin-top: 20px;
+//   padding: 40px;
+// }
 
-.card-trip {
-  overflow: hidden;
-  background: #FFC874;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 80px;
-  margin: 90px;
-  width: 500px;
-  height : 300px;
-}
+// .card-trip {
+//   overflow: hidden;
+//   background: #FFC874;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   padding: 80px;
+//   margin: 90px;
+//   width: 500px;
+//   height : 300px;
+// }
 
-.card-resa {
-  overflow: hidden;
-  background: #FFC874;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 80px;
-  margin: 90px;
-  width: 500px;
-}
+// .card-resa {
+//   overflow: hidden;
+//   background: #FFC874;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   padding: 80px;
+//   margin: 90px;
+//   width: 500px;
+// }
 
-.card-trip-index {
-  overflow: hidden;
-  background: #FFC874;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 20px;
-  margin: 70px;
-  width: 300px;
-}
+// .card-trip-index {
+//   overflow: hidden;
+//   background: #FFC874;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   padding: 20px;
+//   margin: 70px;
+//   width: 300px;
+// }
 
-.card-trip > img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-}
+// .card-trip > img {
+//   height: 300px;
+//   width: 100%;
+//   object-fit: cover;
+// }
 
-.card-trip-index > img {
-  height: 100px;
-  width: 50%;
-  object-fit: cover;
-}
+// .card-trip-index > img {
+//   height: 100px;
+//   width: 50%;
+//   object-fit: cover;
+// }
 
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
+// .card-trip h2 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0;
+// }
 
-.card-trip-index h2 {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0;
-}
+// .card-trip-index h2 {
+//   font-size: 12px;
+//   font-weight: bold;
+//   margin: 0;
+// }
 
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
+// .card-trip p {
+//   font-size: 12px;
+//   opacity: .7;
+//   margin: 0;
+// }
 
-.card-trip-index p {
-  font-size: 10px;
-  opacity: .7;
-  margin: 0;
-}
+// .card-trip-index p {
+//   font-size: 10px;
+//   opacity: .7;
+//   margin: 0;
+// }
 
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
+// .card-trip .card-trip-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
 
-.card-trip-index .card-trip-infos-index {
-  padding: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
+// .card-trip-index .card-trip-infos-index {
+//   padding: 13px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
 
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
+// .card-trip-infos .card-trip-user {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }
 
-.card-trip-infos-index .card-trip-user-index {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
+// .card-trip-infos-index .card-trip-user-index {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }
 
-p {
-  font-family: 'Nunito';
-  color: black;
-}
+// p {
+//   font-family: 'Nunito';
+//   color: black;
+// }
 
-h4 {
-  font-weight: bold;
-}
+// h4 {
+//   font-weight: bold;
+// }
 
-a {
-  color: black;
-}
+// a {
+//   color: black;
+// }
