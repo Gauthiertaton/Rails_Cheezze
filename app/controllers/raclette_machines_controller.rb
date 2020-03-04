@@ -17,8 +17,6 @@ class RacletteMachinesController < ApplicationController
     @raclette_machine.save!
     redirect_to raclette_machines_path
 
-
-
     # raise
   end
    private
