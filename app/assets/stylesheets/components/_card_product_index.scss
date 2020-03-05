@@ -3,8 +3,11 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 15px;
-  width: 400px;
+  margin-right: 60px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 430px;
+  padding-top: 15px;
   height: 320px;
 }
 
@@ -16,13 +19,14 @@
 .card-infos {
   padding-right: 10px;
   padding-top: .5px;
-  padding-left: 10px;
+  padding-left: 25px;
 
 }
 
 .card-name h2 {
   font-size: 16px;
   font-weight: bold;
+  color: $yellow;
 }
 
 .card-name {
@@ -47,6 +51,7 @@ padding-right: 5px;
   width: 70px;
   border: solid 1px;
   border-radius: 5px;
+  border-color: $yellow;
 }
 
 .card-avatar .card-trip-user {
