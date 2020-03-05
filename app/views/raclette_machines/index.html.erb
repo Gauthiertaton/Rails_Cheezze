@@ -3,37 +3,48 @@
 <div class="title-index pt-3 pb-5">
   <h1 class = "text-center"><strong>  Appareils à Raclette </strong></h1>
 </div>
-<!-- <div class="container d-flex justify-content-around"> -->
-<!-- <div class="col-sm-4"> -->
-  <!-- <div class="row"> -->
-    <% @raclette_machines.each do |raclette_machine| %>
-    <%= link_to raclette_machine_path(raclette_machine) do %>
-      <div class="card-trip-index ml-5">
-        <div class="image d-flex justify-content-center">
-          <%= cl_image_tag raclette_machine.photo.key, height: 200, width: 380, crop: :fill %>
-        </div>
-          <div class="card-infos">
-            <div class="container-name-avatar d-flex justify-content-between">
-              <div class="card-name">
-                <h2><%= raclette_machine.name%></h2>
+<div class="container d-flex">
+  <div class="col ">
+    <div class="row">
+      <!-- DIV ONE -->
+      <div>
+        <% @raclette_machines.each do |raclette_machine| %>
+          <%= link_to raclette_machine_path(raclette_machine) do %>
+            <div class="card-trip-index ml-5">
+              <div class="image d-flex justify-content-center">
+                <%= cl_image_tag raclette_machine.photo.key, height: 200, width: 380, crop: :fill %>
+
               </div>
-              <div class="card-avatar">
-                <%= cl_image_tag raclette_machine.user.photo.key, width: 50, height: 50, crop: :thumb, gravity: :face, class: "card-trip-user avatar-bordered" %>
+              <div class="card-infos">
+                <div class="container-name-avatar d-flex justify-content-between">
+                  <div class="card-name">
+                    <h2><%= raclette_machine.name%></h2>
+                  </div>
+                 <div class="card-avatar">
+                   <%= cl_image_tag raclette_machine.user.photo.key, width: 50, height: 50, crop: :thumb, gravity: :face, class: "card-trip-user avatar-bordered" %>
+                </div>
+                </div>
+                <div class="container-capacity-price d-flex justify-content-between pt-2">
+                  <div class="card-capacity">
+                    <p><strong> Capacité :</strong> <%= raclette_machine.capacity  %></p>
+                  </div>
+                  <div class="card-price">
+                    <p><%= raclette_machine.price %> / jour</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="container-capacity-price d-flex justify-content-between pt-2">
-              <div class="card-capacity">
-                <p><strong> 🍴Capacité :</strong> <%= raclette_machine.capacity  %></p>
-              </div>
-              <div class="card-price">
-                <p><%= raclette_machine.price %> / jour</p>
-              </div>
-            </div>
-            </div>
-          </div>
-    <% end %>
-    <% end %>
-<!-- </div> -->
+          <% end %>
+        <% end %>
+      </div>
+
+      <!-- DIV TWO -->
+      <div id="map" style="width: 50%; height: 600px; " data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

@@ -2,6 +2,16 @@ class RacletteMachinesController < ApplicationController
   def index
     @raclette_machines = RacletteMachine.all.order(:name)
     @user = current_user
+    # @raclette_machines = RacletteMachine.all.order(:name)
+    @raclette_machines = RacletteMachine.geocoded #returns flats with coordinates
+
+    @markers = @raclette_machines.map do |raclette_machine|
+      {
+        lat: raclette_machine.latitude,
+        lng: raclette_machine.longitude
+      }
+    end
+
   end
 
   def show
@@ -17,10 +27,8 @@ class RacletteMachinesController < ApplicationController
     @raclette_machine = RacletteMachine.new(raclette_machine_params)
     @raclette_machine.save!
     redirect_to raclette_machines_path
-
-    # raise
   end
-   private
+  private
 
   def raclette_machine_params
     params.require(:raclette_machine).permit(:name, :capacity, :address, :accessories, :price, :user_id, :photo)
