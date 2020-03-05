@@ -1,0 +1,69 @@
+
+.card-trip-index {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-right: 60px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 430px;
+  padding-top: 15px;
+  height: 320px;
+}
+
+.image {
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+.card-infos {
+  padding-right: 10px;
+  padding-top: .5px;
+  padding-left: 25px;
+
+}
+
+.card-name h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: $yellow;
+}
+
+.card-name {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 10px;
+}
+
+.card-capacity p {
+  font-size: 15px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-price {
+padding-right: 5px;
+}
+
+.card-price p {
+  font-size: 14px;
+  width: 70px;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: $yellow;
+}
+
+.card-avatar .card-trip-user {
+  position: relative;
+  // right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+// .card-name-avatar {
+//  vertical-align: middle;
+// }
+
+
+
