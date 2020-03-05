@@ -13,6 +13,7 @@
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to "Mes réservations", reservations_path, class: "nav-link" %>
+          <%= link_to "Mes annonces", owner_raclette_machines_path, class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
