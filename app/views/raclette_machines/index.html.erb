@@ -11,7 +11,6 @@
             <div class="card-trip-index ml-5">
               <div class="image d-flex justify-content-center">
                 <%= cl_image_tag raclette_machine.photo.key, height: 200, width: 380, crop: :fill %>
-
               </div>
               <div class="card-infos">
                 <div class="container-name-avatar d-flex justify-content-between">
@@ -19,7 +18,7 @@
                     <h2><%= raclette_machine.name%></h2>
                   </div>
                  <div class="card-avatar">
-                   <%= cl_image_tag raclette_machine.user.photo.key, width: 50, height: 50, crop: :thumb, gravity: :face, class: "card-trip-user avatar-bordered" %>
+                    <%= cl_image_tag raclette_machine.user.photo.key, width: 50, height: 50, crop: :thumb, gravity: :face, class: "card-trip-user avatar-bordered" %>
                 </div>
                 </div>
                 <div class="container-capacity-price d-flex justify-content-between pt-2">

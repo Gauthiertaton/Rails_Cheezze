@@ -25,9 +25,11 @@ class RacletteMachinesController < ApplicationController
 
   def create
     @raclette_machine = RacletteMachine.new(raclette_machine_params)
+    @raclette_machine.user = current_user
     @raclette_machine.save!
     redirect_to raclette_machines_path
   end
+
   private
 
   def raclette_machine_params
