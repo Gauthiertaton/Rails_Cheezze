@@ -1,7 +1,7 @@
 
 
 
-<%= link_to "Retourner à la liste", raclette_machines_path, class: "btn btn-primary m-2 " %>
+<%= link_to "Retourner à la liste", raclette_machines_path, class: "btn btn-outline-primary m-2 " %>
 <div class="container d-flex justify-content-center">
   <div class="card-product">
     <%= cl_image_tag @raclette_machine.photo.key, height: 300, width: 400, crop: :fill %>
@@ -11,7 +11,7 @@
           <h2 class = "text-uppercase m-2"><%= @raclette_machine.name %></h2>
           <p><%= @raclette_machine.address  %></p>
           <p><%= @raclette_machine.accessories  %></p>
-          <h3><%= @raclette_machine.capacity  %> <i class="fas fa-male"></i></h3>
+          <h4><%= @raclette_machine.capacity  %> x <i class="fas fa-male"></i></h4>
       </div>
       <div class = "price">
       <h2 class="card-product-pricing text-black"><%= @raclette_machine.price  %></h2>
