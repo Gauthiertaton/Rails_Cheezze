@@ -1,6 +1,6 @@
 .banner {
   background-size: cover;
-  padding: 200px 0;
+  padding: 100px 0;
   object-fit: cover;
 }
 
@@ -10,12 +10,12 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+  font-family: 'Lobster', cursive;
 }
 
 .banner_defil_right {
   border-style: none;
 }
-
 
 
 .banner_defil_right h4 {
@@ -28,7 +28,6 @@
   padding: 50px;
   border-radius: 30;
 }
-
 
 
 .banner_defil_left h4 {
