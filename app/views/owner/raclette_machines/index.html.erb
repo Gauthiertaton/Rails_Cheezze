@@ -1,16 +1,16 @@
-<% @raclette_machines.each do |raclette_machine| %>
-  <div class="card-resa">
-
-        <div class="card-product-infos">
-          <p> 🧀 <strong><%= raclette_machine.name %></strong> </p>
-          <br>
-
-
+<%if @raclette_machines == [] %>
+  <%= link_to "Créer une annonce", new_raclette_machine_path, class: "btn btn-primary" %>
+<% else %>
+  <% @raclette_machines.each do |raclette_machine| %>
+    <div class="card-resa">
+          <div class="card-product-infos">
+            <p> 🧀 <strong><%= raclette_machine.name %></strong> </p>
+            <br>
+          </div>
         </div>
+     <% end %>
+  </div>
+<% end %>
+<%= link_to "Retourner à la liste des appareils", raclette_machines_path, class: "btn btn-outline-warning m-4" %>
 
-      </div>
-   <% end %>
-
-</div>
-      <%= link_to "Retourner à la liste des appareils", raclette_machines_path, class: "btn btn-outline-warning m-4" %>
 
