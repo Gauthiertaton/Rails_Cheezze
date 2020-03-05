@@ -10,7 +10,31 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+}
 
+.banner_defil_right {
+  border-style: none;
+}
+
+
+
+.banner_defil_right h4 {
+  padding: 30px;
+  text-align: right;
+  line-height: 28px;
+}
+.banner_img {
+  float:right;
+  padding: 50px;
+  border-radius: 30;
+}
+
+
+
+.banner_defil_left h4 {
+  padding: 30px;
+  text-align: left;
+  line-height: 28px;
 }
 
 .banner p {
@@ -18,4 +42,15 @@
   color: white;
   opacity: 1;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner_infos {
+  padding: 30px;
+  margin: 30px;
+  margin-top: 113px;
+}
+
+.banner_infos h6 {
+  font-weight: light;
+  color: #757575;
 }
