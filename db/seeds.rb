@@ -9,16 +9,47 @@ puts "Cleaning.raclette .."
 
 puts 'Creating users...'
 
-User.create!(first_name: "Gauthier", last_name: "Taton", email: 'gauthier_taton@yahoo.fr', password: 'cheezze')
-User.create!(first_name: "Marion", last_name: "Henrio", email: 'marion.henrio@hotmail.fr', password: 'cheezze')
-User.create!(first_name: "Armel", last_name: "Ahehehinnou", email: 'ahehehinnouarmel8@gmail.com', password: 'cheezze')
-User.create!(first_name: "Justine", last_name: "Barbault", email: 'justinehsd@gmail.com', password: 'cheezze')
-User.create!(first_name: "Jean", last_name: "Jacques", email: Faker::Internet.email, password: 'cheezze' )
-User.create!(first_name: "François", last_name: "Fillon", email: Faker::Internet.email, password: 'cheezze' )
-User.create!(first_name: "Jim", last_name: "Morison", email: Faker::Internet.email, password: 'cheezze' )
-User.create!(first_name: "Georges", last_name: "Piton", email: Faker::Internet.email, password: 'cheezze' )
-User.create!(first_name: "Romain", last_name: "Cul", email: Faker::Internet.email, password: 'cheezze' )
-User.create!(first_name: "Jack", last_name: "Daniels", email: Faker::Internet.email, password: 'cheezze' )
+user_1 = User.create!(first_name: "Gauthier", last_name: "Taton", email: 'gauthier_taton@yahoo.fr', password: 'cheezze')
+avatar_file_1 = File.open(Rails.root.join('db/fixtures/avatar/avatar_1.jpg'))
+user_1.photo.attach(io: avatar_file_1, filename: 'avatar_1.jpg', content_type: 'image/jpg')
+
+user_2 = User.create!(first_name: "Marion", last_name: "Henrio", email: 'marion.henrio@hotmail.fr', password: 'cheezze')
+avatar_file_2 = File.open(Rails.root.join('db/fixtures/avatar/avatar_2.jpg'))
+user_2.photo.attach(io: avatar_file_2, filename: 'avatar_2.jpg', content_type: 'image/jpg')
+
+user_3 = User.create!(first_name: "Armel", last_name: "Ahehehinnou", email: 'ahehehinnouarmel8@gmail.com', password: 'cheezze')
+avatar_file_3 = File.open(Rails.root.join('db/fixtures/avatar/avatar_3.jpg'))
+user_3.photo.attach(io: avatar_file_3, filename: 'avatar_3.jpg', content_type: 'image/jpg')
+
+
+user_4 = User.create!(first_name: "Justine", last_name: "Barbault", email: 'justinehsd@gmail.com', password: 'cheezze')
+avatar_file_4 = File.open(Rails.root.join('db/fixtures/avatar/avatar_4.jpg'))
+user_4.photo.attach(io: avatar_file_4, filename: 'avatar_4.jpg', content_type: 'image/jpg')
+
+
+user_5 = User.create!(first_name: "Jean", last_name: "Jacques", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_5 = File.open(Rails.root.join('db/fixtures/avatar/avatar_5.jpg'))
+user_5.photo.attach(io: avatar_file_5, filename: 'avatar_5.jpg', content_type: 'image/jpg')
+
+user_6 = User.create!(first_name: "François", last_name: "Fillon", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_6 = File.open(Rails.root.join('db/fixtures/avatar/avatar_6.jpg'))
+user_6.photo.attach(io: avatar_file_6, filename: 'avatar_6.jpg', content_type: 'image/jpg')
+
+user_7 = User.create!(first_name: "Jim", last_name: "Morison", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_7 = File.open(Rails.root.join('db/fixtures/avatar/avatar_7.jpg'))
+user_7.photo.attach(io: avatar_file_7, filename: 'avatar_7.jpg', content_type: 'image/jpg')
+
+user_8 = User.create!(first_name: "Georges", last_name: "Piton", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_8 = File.open(Rails.root.join('db/fixtures/avatar/avatar_8.jpg'))
+user_8.photo.attach(io: avatar_file_8, filename: 'avatar_8.jpg', content_type: 'image/jpg')
+
+user_9 = User.create!(first_name: "Romain", last_name: "Cul", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_9 = File.open(Rails.root.join('db/fixtures/avatar/avatar_9.jpg'))
+user_9.photo.attach(io: avatar_file_9, filename: 'avatar_9.jpg', content_type: 'image/jpg')
+
+user_10 = User.create!(first_name: "Jack", last_name: "Daniels", email: Faker::Internet.email, password: 'cheezze' )
+avatar_file_10 = File.open(Rails.root.join('db/fixtures/avatar/avatar_10.jpg'))
+user_10.photo.attach(io: avatar_file_10, filename: 'avatar_10.jpg', content_type: 'image/jpg')
 
 puts 'Creating raclette machine...'
 user_id = User.ids

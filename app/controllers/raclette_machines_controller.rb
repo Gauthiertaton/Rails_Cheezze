@@ -1,5 +1,7 @@
 class RacletteMachinesController < ApplicationController
   def index
+    @raclette_machines = RacletteMachine.all.order(:name)
+    @user = current_user
     # @raclette_machines = RacletteMachine.all.order(:name)
     @raclette_machines = RacletteMachine.geocoded #returns flats with coordinates
 
@@ -9,6 +11,7 @@ class RacletteMachinesController < ApplicationController
         lng: raclette_machine.longitude
       }
     end
+
   end
 
   def show
