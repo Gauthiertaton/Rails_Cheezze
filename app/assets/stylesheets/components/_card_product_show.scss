@@ -8,7 +8,7 @@
 
 .card-product {
   overflow: hidden;
-  background: #FFC874;
+  background: white;
   padding: 50px;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -37,13 +37,23 @@
 
 }
 
+.card-product-pricing {
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: $yellow;
+}
+
+.infos {
+  justify-content: left;
+}
+
 
 .card-product .card-product-infos {
   padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // position: relative;
 }
 
 .form{
