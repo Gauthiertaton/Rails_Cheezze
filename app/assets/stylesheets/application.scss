@@ -20,4 +20,7 @@
 @import "pages/resa";
 @import "components/footer";
 
-
+body {
+  position: relative;
+  min-height: calc( 100vh - 12px );
+}
