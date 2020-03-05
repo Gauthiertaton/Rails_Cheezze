@@ -17,6 +17,14 @@ class RacletteMachinesController < ApplicationController
   def show
     @raclette_machine = RacletteMachine.find(params[:id])
     @reservation = Reservation.new
+    @raclette_machines = RacletteMachine.geocoded #returns flats with coordinates
+
+    @markers = @raclette_machines.map do |raclette_machine|
+      {
+        lat: raclette_machine.latitude,
+        lng: raclette_machine.longitude
+      }
+    end
   end
 
   def new
