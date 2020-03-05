@@ -18,7 +18,7 @@
                 <h2><%= raclette_machine.name%></h2>
               </div>
               <div class="card-avatar">
-                <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+                <%= cl_image_tag raclette_machine.user.photo.key, width: 50, height: 50, crop: :thumb, gravity: :face, class: "card-trip-user avatar-bordered" %>
               </div>
             </div>
             <div class="container-capacity-price d-flex justify-content-between pt-2">

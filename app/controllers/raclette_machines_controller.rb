@@ -1,6 +1,7 @@
 class RacletteMachinesController < ApplicationController
   def index
     @raclette_machines = RacletteMachine.all.order(:name)
+    @user = current_user
   end
 
   def show
