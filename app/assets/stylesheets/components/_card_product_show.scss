@@ -32,28 +32,29 @@
 
 .card-product p {
   font-size: 13px;
-  margin: 0;
+  margin: 0px;
   color: black;
+  position: relative;
 
 }
 
 .card-product-pricing {
-  border: solid 1px;
-  border-radius: 5px;
-  border-color: $yellow;
+  // border: solid 1px;
+  // border-radius: 5px;
+  // border-color: $yellow;
+
 }
 
 .infos {
   justify-content: left;
+  p {
+    text-align: justify;
+  }
 }
 
 
 .card-product .card-product-infos {
   padding: 16px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: flex-end;
-  // position: relative;
 }
 
 .form{
@@ -65,6 +66,14 @@
   background: #FFC874;
 }
 
+.text-uppercase {
+  margin: 300px;
+}
+
+.price {
+  text-align: right;
+  border-color: $yellow;
+}
 
 p {
   font-family: 'Nunito';
