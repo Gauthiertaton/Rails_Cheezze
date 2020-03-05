@@ -16,10 +16,8 @@ class RacletteMachinesController < ApplicationController
     @raclette_machine = RacletteMachine.new(raclette_machine_params)
     @raclette_machine.save!
     redirect_to raclette_machines_path
-
-    # raise
   end
-   private
+  private
 
   def raclette_machine_params
     params.require(:raclette_machine).permit(:name, :capacity, :address, :accessories, :price, :user_id, :photo)
