@@ -1,21 +1,21 @@
 <%= link_to "Retourner à la liste des appareils", raclette_machines_path, class: "btn btn-outline-warning m-4 font-weight-bold" %>
 
 <h1 class = "text-center"><strong>Mes réservations</strong></h1>
-<div class="row d-flex justify-content-center mr-0">
+<div class="row d-flex justify-content-center mr-0 mb-5">
   <% @reservations.each do |reservation| %>
   <div class="card-resa d-flex">
     <%= cl_image_tag reservation.raclette_machine.photo.key, height: 200, width: 400, crop: :fill %>
     <div class="card-resa-infos">
-     <p> <strong><%= reservation.raclette_machine.name %></strong> </p>
+     <p class="text-left"> <strong><%= reservation.raclette_machine.name %></strong> </p>
       <p class="mt-3"> 📅 <strong> </strong> <%= reservation.reservation_start_date %> </p>
       <p> 📅<strong>  </strong> <%= reservation.reservation_end_date %> </p>
       <p class="badge badge-primary text-wrap mt-3" style="width: 6rem;"> <strong> <%= reservation.total_price %>€ </strong></p>
       <br>
       <div class="rental-statut d-flex align-items-center pt-3">
         <% case reservation.status
-            when "Acceptée"%><div class="text-pending"><h5>Acceptée</h5></div><span> </span><div class="bounceball"></div>
-          <%when "Refusée"%><div class="text-pending"><h5>Refusée</h5></div><span> </span><div class="bounceball"></div>
-          <%when "En attente de réservation"%><div class="text-pending"><h5>En attente</h5></div><span> </span><div class="bounceball"></div>
+            when "Accept"%><i class="far fa-check-square color-green"></i>
+          <%when "Refuse"%><i class="far fa-times-circle color-red"></i>
+          <%when "En attente"%><div class="text-pending"><h5>En attente de réservation</h5></div><span> </span><div class="bounceball"></div>
         <%end%>
       </div>
     </div>
