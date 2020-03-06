@@ -1,1 +1,23 @@
-<h1 class = "text-center"><strong>Mes réservations</strong></h1>
+<h1 class = "text-center"><strong>  Mes annonces </strong></h1>
+
+<div class="row d-flex justify-content-center mr-0">
+  <% @reservations.each do |reservation| %>
+    <div class="card-resa d-flex">
+      <%#= cl_image_tag @reservation.photo.key, height: 200, width: 300, crop: :fill %>
+      <div class="card-resa-infos p-4">
+        <div class="text-center ">
+          <% if reservation.status == 'Acceptée' %>
+            <h3><span class="status"><i class="fas fa-check"></i> Acceptée</span></h3>
+          <% elsif reservation.status == 'Refusée' %>
+            <h3><span class="status"><i class="fas fa-times"></i> Refusée</span></h3>
+          <% else %>
+            <%= link_to "Acceptée", accept_owner_reservation_path(reservation), method: 'patch', class: 'btn btn-success btn-sm' %>
+            <%= link_to "Refusée", decline_owner_reservation_path(reservation), method: 'patch', class: 'btn btn-danger btn-sm'  %>
+          <% end %>
+        </div>
+        <br>
+      </div>
+    </div>
+  <%end%>
+</div>
+

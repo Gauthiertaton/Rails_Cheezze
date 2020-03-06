@@ -12,7 +12,7 @@ class Owner::ReservationsController < ApplicationController
 
   def decline
     @reservation = Reservation.find(params[:id])
-    @reservation.status = 'Annulée'
+    @reservation.status = 'Refusée'
     @reservation.save!
     redirect_to owner_reservations_path
   end
