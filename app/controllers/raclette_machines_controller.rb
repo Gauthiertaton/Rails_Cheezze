@@ -11,7 +11,6 @@ class RacletteMachinesController < ApplicationController
         lng: raclette_machine.longitude
       }
     end
-
   end
 
   def show
