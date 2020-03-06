@@ -1,9 +1,9 @@
-<h1 class = "text-center"><strong>  Mes appareils </strong></h1>
-
-<div class="d-flex justify-content-between">
+<div class="d-flex">
   <%= link_to "Retourner à la liste des appareils", raclette_machines_path, class: "btn btn-outline-warning font-weight-bold m-4" %>
   <%= link_to "Créer une annonce", new_raclette_machine_path, class: "btn btn-outline-warning font-weight-bold m-4" %>
 </div>
+<h1 class = "text-center mt-2"><strong> Mes appareils </strong></h1>
+
 <div class="row d-flex justify-content-center mr-0">
   <% @raclette_machines.each do |raclette_machine| %>
     <div class="card-resa d-flex">
