@@ -1,7 +1,7 @@
 class ReservationsController < ApplicationController
 
   def index
-    @reservations = current_user.reservations
+    @reservations = current_user.reservations.order(created_at: :desc)
   end
 
   def new
@@ -13,7 +13,7 @@ class ReservationsController < ApplicationController
     @reservation.user_id = current_user.id
     @reservation.raclette_machine = RacletteMachine.find(params[:raclette_machine_id])
     @reservation.total_price = (@reservation.reservation_end_date - @reservation.reservation_start_date).to_i * (@reservation.raclette_machine.price).to_i
-    @reservation.status = 'En attente de réservation'
+    @reservation.status = 'En attente'
     @reservation.save!
     redirect_to reservations_path
   end

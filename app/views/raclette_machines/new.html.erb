@@ -1,11 +1,9 @@
 
-<h2 class="text-center"><strong id="red-word">Ajouter une annonce</strong></h2>
+<h1 class="text-center pt-4"><strong id="red-word">Ajouter une annonce</strong></h1>
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
   <div class="row justify-content-center">
     <div class="col-6">
-
-      <br>
       <%= simple_form_for @raclette_machine do |f| %>
       <%= f.input :name, placeholder: "Tefal X342", :label_html => { :class => "label-css"} %>
       <%= f.input :address, label: "Your address", placeholder: "36 avenue du calin Nantes" %>
@@ -13,11 +11,7 @@
       <%= f.input :accessories, label: "Accessories", placeholder: "3 poelons" %>
       <%= f.input :price, label: "Price €", placeholder: "100€" %>
       <%= f.input :photo, as: :file %>
-      <hr>
-      <br>
-      <hr>
-      <%= f.button :submit, "Créer mon annonce", class: "btn btn-danger btn-lg"%>
-
+      <%= f.button :submit, "Créer mon annonce", class: "btn btn-danger btn-l mt-3 mb-5"%>
       <% end %>
     </div>
   </div>
