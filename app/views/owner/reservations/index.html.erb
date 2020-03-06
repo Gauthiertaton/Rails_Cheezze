@@ -1,23 +1,37 @@
-<h1 class = "text-center"><strong>  Mes annonces </strong></h1>
+<h1 class = "text-center mt-2"><strong>  Mes annonces </strong></h1>
+
 
 <div class="row d-flex justify-content-center mr-0">
-  <% @reservations.each do |reservation| %>
-    <div class="card-resa d-flex">
-      <%#= cl_image_tag @reservation.photo.key, height: 200, width: 300, crop: :fill %>
-      <div class="card-resa-infos p-4">
-        <div class="text-center ">
+  <%@raclette_machines.each do |raclette_machine| %>
+    <% @reservations.each do |reservation| %>
+      <div class="card-resa d-flex justify-content-between ">
+        <div class="card-resa-img">
+          <%= cl_image_tag reservation.raclette_machine.photo.key, height: 200, width: 400, crop: :fill %>
+        </div>
+        <div class="card-resa-infos">
+         <p class='text-left'> <strong><%= reservation.raclette_machine.name %></strong> </p>
+          <div class="date">
+            <h5 class="mt-3 text-left">📅 <%= reservation.reservation_start_date.strftime("%d %B %Y") %> </h5>
+            <br>
+            <h5 class="text-left">📅 <%= reservation.reservation_end_date.strftime("%d %B %Y") %></h5>
+          </div>
+          <h5 class="badge badge-primary text-wrap mt-3" style="width: 6rem;"> <strong> <%= reservation.total_price %>€ </strong></h5>
+          <br>
+        </div>
+        <div class="status font-weight-bold">
           <% if reservation.status == 'Acceptée' %>
-            <h3><span class="status"><i class="fas fa-check"></i> Acceptée</span></h3>
+            <p>Acceptée</p>
           <% elsif reservation.status == 'Refusée' %>
-            <h3><span class="status"><i class="fas fa-times"></i> Refusée</span></h3>
+            <p>Refusée</p>
           <% else %>
             <%= link_to "Acceptée", accept_owner_reservation_path(reservation), method: 'patch', class: 'btn btn-success btn-sm' %>
             <%= link_to "Refusée", decline_owner_reservation_path(reservation), method: 'patch', class: 'btn btn-danger btn-sm'  %>
           <% end %>
         </div>
-        <br>
       </div>
-    </div>
+    <%end%>
   <%end%>
 </div>
+
+
 

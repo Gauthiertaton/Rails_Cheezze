@@ -2,16 +2,15 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 50px;
+  padding: 20px;
   margin: 50px;
 
-  width: 700px;
+  width: 900px;
   height: 300px;
 }
 
 .card-resa .card-resa-infos {
   padding: 16px;
-  margin-left: 20px;
 }
 
   p {
@@ -22,4 +21,23 @@
   margin-top: 8px;
   }
 
+  .card-resa .card-resa-infos h5{
+    font-size: 14px;
+  }
+
+  .card-resa-img{
+    display: flex;
+    align-items: center;
+  }
+
+  .card-resa .date{
+    padding-top: 30px;
+    padding-bottom: 23px;
+
+  }
+
+.card-resa .status{
+  display: flex;
+  align-items: center;
+}
 
