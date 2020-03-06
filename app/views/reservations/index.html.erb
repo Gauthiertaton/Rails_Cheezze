@@ -14,18 +14,15 @@
           <%= cl_image_tag reservation.raclette_machine.photo.key, height: 200, width: 400, crop: :fill %>
 
         <div class="card-resa-infos">
-         <p> <strong><%= reservation.raclette_machine.name %></strong> </p>
+          <p> <strong><%= reservation.raclette_machine.name %></strong> </p>
           <p> 📅 <strong> </strong> <%= reservation.reservation_start_date %> </p>
           <p> 📅<strong>  </strong> <%= reservation.reservation_end_date %> </p>
-          <p class="badge badge-primary text-wrap" style="width: 6rem;"> <strong> <%= reservation.total_price %>€ </strong></p>
+          <h2 class="badge badge-primary text-wrap text-center m-3" style="width: 6rem;"> <strong> <%= reservation.total_price %>€ </strong></h2>
           <br>
-          <p> <div class="spinner-border spinner-border-sm text-warning" role="status"> <span class="sr-only">Loading...</span></div><strong> Statut :  </strong> <%= reservation.status %> </p>
-
-
+          <p class ="m-1"> <div class="spinner-border spinner-border-sm text-warning" role="status"> <span class="sr-only">Loading...</span></div><strong> Statut :  </strong> <%= reservation.status %> </p>
         </div>
 
-      </div>
-   <% end %>
-
+  </div>
+<% end %>
 </div>
 
