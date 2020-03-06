@@ -10,6 +10,9 @@
       <%= cl_image_tag raclette_machine.photo.key, height: 200, width: 300, crop: :fill %>
       <div class="card-resa-infos p-4">
         <p> 🧀 <strong><%= raclette_machine.name %></strong> </p>
+        <p class="text-justify"><strong><%= raclette_machine.price %></strong> </p>
+        <p class="text-justify"><strong><%= raclette_machine.capacity %></strong> x <i class="fas fa-male"></i></p>
+
         <br>
       </div>
     </div>
