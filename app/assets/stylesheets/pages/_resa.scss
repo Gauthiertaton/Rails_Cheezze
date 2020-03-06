@@ -2,18 +2,14 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 50px;
-  margin: 10px;
-  margin-top: 20px;
-  width: 704px;
+  padding: 20px;
+  margin: 50px;
+  width: 900px;
   height: 300px;
 }
 
 .card-resa .card-resa-infos {
   padding: 16px;
-  margin-left: 20px;
-  margin-top: -27px;
-  text-align: justify;
 }
 
   p {
@@ -23,13 +19,23 @@
   margin-bottom: 0;
   margin-top: 8px;
   }
-
-  .text-pending h5 {
-   font-size: 15px;
-   font-weight: bold;
-   margin-top: -8px;
+  .card-resa .card-resa-infos h5{
+    font-size: 14px;
   }
 
+  .card-resa-img{
+    display: flex;
+    align-items: center;
+  }
 
+  .card-resa .date{
+    padding-top: 30px;
+    padding-bottom: 23px;
 
+  }
+
+.card-resa .status{
+  display: flex;
+  align-items: center;
+}
 

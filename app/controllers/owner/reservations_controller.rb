@@ -1,6 +1,7 @@
 class Owner::ReservationsController < ApplicationController
   def index
     @reservations = current_user.reservations
+    @raclette_machines = current_user.raclette_machines
   end
 
   def accept
