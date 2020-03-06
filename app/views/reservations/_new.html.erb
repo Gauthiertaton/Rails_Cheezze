@@ -1,31 +1,31 @@
-<!--
-<div class="container_form"> -->
+
+<div class="container_form">
   <h4>Réserves ton appareil à raclette</h4>
 
 <%= simple_form_for [@raclette_machine, @reservation] do |f| %>
-  <!--   <div class="form-group inline pt-3 w-40">
+    <div class="form-group inline pt-3 w-40">
       <label for="example-datetime-local-input" class="col-2 col-form-label"></label>
       <div class="col-12">
 
- -->
+
         <%= f.input :reservation_start_date, as: :date, html5: true, placeholder: 'Date de début', as: :string, required: false, input_html: { id: "range_start"} %>
         <!-- <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input"> -->
-      <!-- </div>
+      </div>
 
 
     </div>
     <div class="form-group inline pt-3 w-40">
       <label for="exam" class="col-2 col-form-label"></label>
-      <div class="col-12"> -->
+      <div class="col-12">
 
         <%= f.input :reservation_end_date, as: :date, html5: true, placeholder: 'Date de fin', as: :string, required: false, input_html: { id: "range_end"} %>
         <!-- <input class="form-control" type="date" value="2011-08-19" id="example-date-input"> -->
           <%= f.button :submit, 'Reservation', class: 'btn btn-dark mt-4' %>
-     <!--  </div>
-    </div> -->
+
+          <p class="card-trip-pricing text-right pt-4">Prix total: <span id="total-price"></span>€</p>
+
   <% end %>
-<!-- </div>
- -->
+
 
 
 

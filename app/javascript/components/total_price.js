@@ -1,11 +1,10 @@
-// import moment from 'moment'
+import moment from 'moment'
 
 const calcTotalPrice = (startDate, endDate) => {
   // Chercher les elements date de debut et date de fin
   const startMoment = moment(startDate);
   const endMoment = moment(endDate);
   const rangeDate = endMoment.diff(startMoment, 'days');
-  // const rangeDate = endDate - startDate;
   // Chercher le price_per_day
   const pricePerDay = document.getElementById("price-per-day").dataset.price; // string
   // Calculer le total_price
@@ -13,7 +12,7 @@ const calcTotalPrice = (startDate, endDate) => {
   // Insérer le total_price dans le HTML
   const totalPriceBox = document.querySelector("#total-price");
   if (totalPrice > 0) {
-    totalPriceBox.innerHTML = totalPrice
+    totalPriceBox.innerHTML = totalPrice;
   } else {
     console.log(0);
   };
