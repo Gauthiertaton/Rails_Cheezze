@@ -1,30 +1,31 @@
 
 <%= link_to "Retourner à la liste", raclette_machines_path, class: "btn btn-outline-primary m-2 " %>
-  <div class="container d-flex justify-content-center">
-    <div class="card-product">
-          <div id="map" style="width: 100%; height: 200px; " data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-          </div>
-            <div class="image mt-3 mb-3">
-              <%= cl_image_tag @raclette_machine.photo.key, height: 200, width: 390, crop: :fill %>
-      <!-- <img src="https://images.unsplash.com/photo-1522100077728-4fae00f560c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1581&q=80" /> -->
-            </div>
-         <!--  </div> -->
-      <div class="card-product-info">
-        <div class="infos">
-            <h2 class = "text-uppercase"><%= @raclette_machine.name %></h2>
-            <p><%= @raclette_machine.address  %></p>
-            <p><%= @raclette_machine.accessories  %></p>
-            <p><%= @raclette_machine.capacity  %> x <i class="fas fa-male"></i></p>
-        </div>
-        <div class = "price">
-          <p id="price-per-day" data-price="<%= @raclette_machine.price %>"><strong><%= @raclette_machine.price %></strong></p>
-        </div>
-      </div>
-    </div>
-        <div class="form">
-        <%= render 'reservations/new'%>
-        </div>
+<div class="container d-flex justify-content-center">
+  <div class="card-product">
+    <div id="map" style="width: 100%; height: 200px; " data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
+  <div class="image mt-3 mb-3">
+    <%= cl_image_tag @raclette_machine.photo.key, height: 200, width: 390, crop: :fill %>
+    <!-- <img src="https://images.unsplash.com/photo-1522100077728-4fae00f560c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1581&q=80" /> -->
+  </div>
+  <!--  </div> -->
+  <div class="card-product-info">
+    <div class="infos">
+      <h2 class = "text-uppercase"><%= @raclette_machine.name %></h2>
+      <p><%= @raclette_machine.address  %></p>
+      <p><%= @raclette_machine.accessories  %></p>
+      <p><%= @raclette_machine.capacity  %> x <i class="fas fa-male"></i></p>
+    </div>
+    <div class = "price">
+      <p id="price-per-day" data-price="<%= @raclette_machine.price %>"><strong><%= @raclette_machine.price %></strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="form">
+  <%= render 'reservations/new'%>
+</div>
+
 
 
 
