@@ -17,7 +17,7 @@
             <p><%= @raclette_machine.capacity  %> x <i class="fas fa-male"></i></p>
         </div>
         <div class = "price">
-          <p class="card-product-pricing text-black"><strong><%= @raclette_machine.price  %></strong></p>
+          <p id="price-per-day" data-price="<%= @raclette_machine.price %>"><strong><%= @raclette_machine.price %></strong></p>
         </div>
       </div>
     </div>
