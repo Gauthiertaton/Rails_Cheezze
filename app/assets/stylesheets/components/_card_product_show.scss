@@ -1,23 +1,16 @@
 
-// .showmaincard {
-//   height: 300px;
-//   margin-top: 20px;
-//   padding: 40px;
-// }
-
-
 .card-product {
   overflow: hidden;
   background: #FFC874;
-  padding: 50px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  width: 500px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 430px;
 }
 
 
 .card-product > img {
-  height: 300px;
+  height: 200px;
   width: 100%;
   object-fit: cover;
 }
@@ -31,26 +24,20 @@
 
 
 .card-product p {
-  font-size: 15px;
+  font-size: 20px;
   margin: 0px;
   color: black;
   position: relative;
 
 }
 
-.card-product-pricing {
-  // border: solid 1px;
-  // border-radius: 5px;
-  // border-color: $yellow;
-
-}
-
 .infos {
-  justify-content: left;
+justify-content: left;
+
   p {
     text-align: justify;
   }
-}
+ }
 
 
 .card-product .card-product-infos {
@@ -58,21 +45,23 @@
 }
 
 .form{
-  padding: 50px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  width: 500px;
+  padding-top: 130px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 390px;
   overflow: hidden;
   background: white;
+  position: justify-content
 }
 
 .text-uppercase {
   margin: 300px;
 }
 
-.price {
+.price p {
   text-align: right;
-  border-color: $yellow;
 }
 
 p {
@@ -82,7 +71,8 @@ p {
 
 h4 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 23px;
+  text-align: center;
 }
 
 a {
